@@ -1,0 +1,49 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "molass_benchmarks"
+version = "0.1.0"
+
+dependencies = [
+]
+
+requires-python = ">=3.9"
+
+authors = [
+  {name = "Molass Community"},
+]
+
+maintainers = [
+  {name = "Molass Community"}
+]
+
+description = "Benchmark Data of Known Composition for Molass Library"
+readme = "README.md"
+license = { text = "GNU General Public License v3.0" }
+
+keywords = ["SEC-SAXS"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python",
+  "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+]
+
+[project.urls]
+Repository = "https://github.com/biosaxs-dev/molass-benchmarks"
+
+[tool.pytest.ini_options]
+pythonpath = [
+  "."
+]
+
+[tool.hatch.build.targets.sdist]
+include = [
+  "molass_benchmarks/*.py",
+  "molass_benchmarks/PROTEINS5/*",
+  "molass_benchmarks/FOLDUNFOLD_CONTINUUM/*",
+  "molass_benchmarks/FOLDUNFOLD_DISCRETE/*",
+]
+exclude = [
+]
