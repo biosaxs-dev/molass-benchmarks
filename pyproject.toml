@@ -19,7 +19,7 @@ maintainers = [
   {name = "Molass Community"}
 ]
 
-description = "Benchmark Data for Molass Library"
+description = "Benchmark Data of Known Composition for Molass Library"
 readme = "README.md"
 license = { text = "GNU General Public License v3.0" }
 
