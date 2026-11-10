@@ -1,7 +1,7 @@
 """
 molass_benchmarks
 
-Benchmark data sets of known composition for the Molass Library: a measured mixture of five proteins and
+Benchmark data sets for the Molass Library: a measured mixture of five proteins (composition not documented here) and
 simulated data with known truth. Each attribute holds the path of a data folder::
 
     from molass_benchmarks import PROTEINS5               # measured (formerly SAMPLE6 of molass_data 0.5.0)

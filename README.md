@@ -1,6 +1,6 @@
 # Benchmark Data for Molass Library
 
-Data sets of **known composition** for testing and demonstrating the Molass Library, kept apart from the tutorial
+Benchmark data sets for testing and demonstrating the Molass Library: simulated data with a **known truth** and a measured mixture of five proteins (its composition is not documented here), kept apart from the tutorial
 data of `molass_data` (which stays small).
 
 ```
@@ -15,7 +15,7 @@ from molass_benchmarks import FOLDUNFOLD_DISCRETE    # contains the folder path
 
 | Attribute | Kind | Content |
 |---|---|---|
-| `PROTEINS5` | measured | A mixture of five proteins (`20191006_proteins5`); it was `SAMPLE6` of `molass_data` 0.5.0. |
+| `PROTEINS5` | measured | A mixture of five proteins (`20191006_proteins5`; which proteins is not documented here: Vc masses of its five components are 450 / 153 / 111 / 60 / 36 kDa, Rg 70 / 40 / 36 / 32 / 24 A); it was `SAMPLE6` of `molass_data` 0.5.0. |
 | `FOLDUNFOLD_CONTINUUM` | simulated | A continuum of fold/unfold species: fast-exchange mix of a folded sphere and an unfolded Gaussian chain whose unfolded fraction falls along the elution (Rg from 52 to 26 Å); one peak with a trailing shoulder. |
 | `FOLDUNFOLD_DISCRETE` | simulated | Three discrete fold/unfold species with different unfolded fractions (true Rg 52.6, 41.4 and 25.7 Å; Guinier Rg of a quick decomposition 48, 33 and 22 Å): a control that a diagnostic should call discrete. |
 
